@@ -6,13 +6,13 @@ import { getDatabase, get, ref } from "https://www.gstatic.com/firebasejs/9.17.1
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBiCcCdQ1vLKl5zXlvDn1NqSfEwA14dA4k",
-  authDomain: "krishi-samrudhi-4cc7f.firebaseapp.com",
-  databaseURL: "https://krishi-samrudhi-4cc7f-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "krishi-samrudhi-4cc7f",
-  storageBucket: "krishi-samrudhi-4cc7f.appspot.com",
-  messagingSenderId: "982399033679",
-  appId: "1:982399033679:web:3ecac6b195f65e1f7be53a"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL, // This is where the database URL comes from
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase app
