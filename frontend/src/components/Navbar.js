@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi"; // Icons for Hamburger and Close
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,8 +11,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md p-3">
-      <div className="flex justify-between items-center px-6 py-4 shadow-md ">
+    <nav className="bg-white p-3">
+      <div className="flex justify-between items-center px-6 py-4 ">
         {/* Left side (Logo and Name) */}
         <div className="flex items-center space-x-2">
           {/* Logo */}
@@ -21,9 +22,9 @@ const Navbar = () => {
             className="w-8 h-8"
           />
           {/* Company Name */}
-          <span className="text-2xl font-bold text-green-800">
+          <Link className="text-2xl font-bold text-green-800" to="/">
             Krishi Samriddhi
-          </span>
+          </Link>
         </div>
 
         {/* Hamburger Menu Icon for Mobile */}
@@ -35,12 +36,12 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 text-lg font-semibold text-gray-700">
-          <a
-            href="#plant-id"
+          <Link
             className="hover:text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 transition-all duration-300"
+            to="/croprecommendation"
           >
-            Plant ID
-          </a>
+              Crop Recommendation
+          </Link>
           <a
             href="#disease-id"
             className="hover:text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 transition-all duration-300"

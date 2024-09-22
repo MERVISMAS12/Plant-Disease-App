@@ -1,11 +1,11 @@
 import React from "react";
 
-const PlantDiseaseSection = () => {
+const DiagnoseNow = () => {
   return (
     <section className="bg-white py-16 px-6 mb-28 md:px-16 lg:px-24 flex flex-col lg:flex-row items-center justify-between">
       {/* Left side - Image with plant */}
       <div className="relative flex-1 lg:max-w-[50%] flex justify-center lg:justify-start">
-        <div className="absolute bottom-0 left-24 w-72 -top-28 bg-white rounded-lg">
+        <div className="absolute bottom-0 left-24 w-72 -top-28 bg-white rounded-lg lg:block hidden"> {/* Changed here */}
           <div className="flex items-center gap-4 w-[400px]">
             <img
               src="/assets/images/img_disease_1.webp" // Replace with the sick plant image
@@ -34,4 +34,4 @@ const PlantDiseaseSection = () => {
   );
 };
 
-export default PlantDiseaseSection;
+export default DiagnoseNow;

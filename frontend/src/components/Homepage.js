@@ -1,18 +1,20 @@
 import CropRecommendation from "./CropRecommendation.js";
 import DiagnoseNow from "./DiagnoseNow.js";
-import Navbar from "./Navbar.js";
 import ContactPage from "./ContactPage.js";
 import Footer from "./Footer.js"
 import { Outlet } from "react-router-dom";
+import Overview from "./Overview.js";
+import Identify from "./Identify.js";
 
-function Body() {
+function Homepage() {
   return (
     <div>
-      <Navbar />
-      <Outlet/>
-      <Footer />
+      <DiagnoseNow/>
+      <Overview/>
+      <Identify/>
+      <ContactPage />
     </div>
   );
 }
 
-export default Body;
+export default Homepage;
