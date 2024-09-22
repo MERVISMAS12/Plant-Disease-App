@@ -35,31 +35,25 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-6 text-lg font-semibold text-gray-700">
+        <div className="hidden md:flex space-x-20 text-lg font-semibold text-gray-700">
+        <Link
+            className="hover:text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-900 transition-all duration-300"
+            to="/soilmoisture"
+          >
+              Soil Moisture
+          </Link>
           <Link
-            className="hover:text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 transition-all duration-300"
+            className="hover:text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-900 transition-all duration-300"
             to="/croprecommendation"
           >
               Crop Recommendation
           </Link>
-          <a
-            href="#disease-id"
-            className="hover:text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 transition-all duration-300"
-          >
-            Disease ID
-          </a>
-          <a
-            href="#sign-in"
-            className="hover:text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 transition-all duration-300"
-          >
-            Sign In
-          </a>
         </div>
 
         {/* Desktop Try for Free Button */}
         <div className="hidden md:block">
-          <button className="bg-gradient-to-r from-orange-400 to-yellow-400 text-white font-semibold py-2 px-4 rounded-full hover:from-orange-500 hover:to-yellow-500 transition-all duration-300 shadow-md">
-            Try for Free
+          <button className="bg-gradient-to-r from-green-400 to-green-900 text-white font-semibold py-2 px-4 rounded-full hover:from-orange-500 hover:to-yellow-500 transition-all duration-300 shadow-md">
+            Sign In
           </button>
         </div>
       </div>
@@ -67,26 +61,20 @@ const Navbar = () => {
       {/* Mobile Menu (Visible only on small screens) */}
       {isOpen && (
         <div className="md:hidden bg-white py-2 px-6 space-y-4 shadow-md">
-          <a
-            href="#plant-id"
+          <Link
+            to="/soilmoisture"
             className="block text-lg font-semibold text-gray-700 hover:text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 transition-all duration-300"
           >
-            Plant ID
-          </a>
-          <a
-            href="#disease-id"
+            Soil-Moisture
+          </Link>
+          <Link
+            to="/croprecommendation"
             className="block text-lg font-semibold text-gray-700 hover:text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 transition-all duration-300"
           >
-            Disease ID
-          </a>
-          <a
-            href="#sign-in"
-            className="block text-lg font-semibold text-gray-700 hover:text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 transition-all duration-300"
-          >
-            Sign In
-          </a>
+            Crop Recommendation
+          </Link>
           <button className="w-full bg-gradient-to-r from-orange-400 to-yellow-400 text-white font-semibold py-2 px-4 rounded-full hover:from-orange-500 hover:to-yellow-500 transition-all duration-300 shadow-md">
-            Try for Free
+            Sign In
           </button>
         </div>
       )}

@@ -66,7 +66,7 @@ const ContactInfo = () => (
         className="flex-auto my-auto"
         style={{ fontFamily: "Raleway, sans-serif", color: "text-green-500" }}
       >
-        mervismascarenhas12@gmail.com
+        teena.v@xavier.ac.in
       </div>
     </div>
     <div className="flex gap-3.5 mt-4">
@@ -75,7 +75,7 @@ const ContactInfo = () => (
         className="flex-auto my-auto"
         style={{ fontFamily: "Raleway, sans-serif", color: "text-green-500" }}
       >
-        +91 70308 34456
+        +91 9619230440
       </div>
     </div>
   </div>

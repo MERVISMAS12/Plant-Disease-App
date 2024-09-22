@@ -26,7 +26,7 @@ const DiagnoseNow = () => {
           Is your green buddy dying? Try the Blossom app to identify the cause
           and get extensive disease and care info in a snap.
         </p>
-        <button className="mt-6 bg-gradient-to-r from-orange-400 to-pink-500 text-white px-6 py-3 rounded-lg text-lg">
+        <button className="mt-6 bg-gradient-to-r from-green-400 to-green-900 text-white px-6 py-3 rounded-lg text-lg">
           Diagnose Now
         </button>
       </div>

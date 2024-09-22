@@ -6,6 +6,7 @@ import ContactPage from "./components/ContactPage.js";
 import CropRecommendation from "./components/CropRecommendation.js";
 import DiagnoseNow from "./components/DiagnoseNow.js";
 import Homepage from "./components/Homepage.js";
+import Soilmoisture from "./components/Soilmoisture.js";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -20,6 +21,10 @@ function App() {
         {
           path : "/croprecommendation",
           element : <CropRecommendation/>
+        },
+        {
+          path : "/soilmoisture",
+          element : <Soilmoisture />
         },
       ],
     },
