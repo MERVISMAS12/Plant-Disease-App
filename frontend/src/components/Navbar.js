@@ -23,7 +23,7 @@ const Navbar = () => {
           />
           {/* Company Name */}
           <Link className="text-2xl font-bold text-green-800" to="/">
-            Krishi Samriddhi
+            KRISHI SAMRIDDHI
           </Link>
         </div>
 

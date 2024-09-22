@@ -20,7 +20,7 @@ const DiagnoseNow = () => {
       <div className="flex-1 lg:max-w-[50%] text-center lg:text-left mt-8 lg:mt-14">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-green-900">
           Identify and cure{" "}
-          <span className="text-green-500">plant diseases</span> with Blossom
+          <span className="text-green-500">plant diseases</span> with Krishi Samriddhi
         </h2>
         <p className="mt-8 text-gray-500 text-lg">
           Is your green buddy dying? Try the Blossom app to identify the cause
